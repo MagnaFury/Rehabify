@@ -57,3 +57,7 @@ require (
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+require (
+   	github.com/gin-gonic/gin v1.6.3 // vulnerable to CVE-2020-28483
+)
