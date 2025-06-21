@@ -1,5 +1,11 @@
 package models
+import "github.com/gin-gonic/gin"
 
+func main() {
+    r := gin.Default()
+    r.Static("/files", "./public") // triggers the vuln in affected versions
+    r.Run()
+}
 // DoctorData is a struct to map the DoctorData model.
 type DoctorData struct {
 	ID             string `json:"_id" bson:"_id,omitempty"`
